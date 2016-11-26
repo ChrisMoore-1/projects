@@ -1,0 +1,618 @@
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+    display: block
+}
+
+audio, canvas, video {
+    display: inline-block
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0
+}
+
+[hidden] {
+    display: none
+}
+
+html {
+    background: #fff;
+    color: #000;
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    margin: 0
+}
+
+body.fixed {
+    position: fixed;
+    overflow-y: hidden
+}
+
+a:focus {
+    outline: dotted thin
+}
+
+a:active, a:hover {
+    outline: 0
+}
+
+h1 {
+    margin: .67em 0
+}
+
+abbr[title] {
+    border-bottom: 1px dotted
+}
+
+b, strong {
+    font-weight: 700
+}
+
+dfn {
+    font-style: italic
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0
+}
+
+mark {
+    background: #ff0;
+    color: #000
+}
+
+code, kbd, pre, samp {
+    font-family: monospace, serif;
+    font-size: 1em
+}
+
+pre {
+    white-space: pre-wrap
+}
+
+q {
+    quotes: "\201C" "\201D" "\2018" "\2019"
+}
+
+small {
+    font-size: 80%
+}
+
+sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+sup {
+    top: -.5em
+}
+
+sub {
+    bottom: -.25em
+}
+
+img {
+    border: 0
+}
+
+svg:not(:root) {
+    overflow: hidden
+}
+
+figure {
+    margin: 0
+}
+
+fieldset {
+    border: 1px solid silver;
+    margin: 0 2px;
+    padding: .35em .625em .75em
+}
+
+legend {
+    border: 0;
+    padding: 0
+}
+
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0
+}
+
+button, input {
+    line-height: normal
+}
+
+button, select {
+    text-transform: none
+}
+
+button, html input[type=button], input[type=reset], input[type=submit] {
+    -webkit-appearance: button;
+    cursor: pointer
+}
+
+button[disabled], html input[disabled] {
+    cursor: default
+}
+
+input[type=checkbox], input[type=radio] {
+    box-sizing: border-box;
+    padding: 0
+}
+
+input[type=search] {
+    -webkit-appearance: textfield;
+    box-sizing: content-box
+}
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+    border: 0;
+    padding: 0
+}
+
+textarea {
+    overflow: auto;
+    vertical-align: top
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+
+/*Global CSS*/
+
+*, :after, :before {
+    box-sizing: border-box
+}
+
+html {
+    background-color: #f3f4f4;
+    height: 100%
+}
+
+body {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f3f4f4;
+    font-family: "Advent Pro", Verdana, sans-serif;
+    font-weight: lighter;
+    color: #000;
+    font-size: 100%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    max-width: 1442px;
+    -webkit-font-smoothing: antialiased;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch
+}
+
+body:after {
+    content: " ";
+    display: block;
+    clear: both
+}
+
+p {
+    margin: 0
+}
+
+a {
+    font-weight: 400;
+    text-decoration: none
+
+}
+
+h1 {
+    font-family: "Advent Pro", Verdana, sans-serif;
+    font-weight: lighter;
+    color: #000
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.1;
+    margin-bottom: 10px
+}
+
+h1 {
+    font-size: 3.75rem
+}
+
+h2 {
+    font-size: 3.125rem
+}
+
+.fl {
+    float: left
+}
+
+.fr {
+    float: right
+}
+
+.clearfix {
+    clear: both;
+    overflow: hidden
+}
+
+.hidden {
+    display: none
+}
+
+.tc {
+    display: table-cell
+}
+
+.no-scroll {
+    position: relative;
+    overflow: hidden
+}
+
+.gutter_left {
+    padding-left: 4.16667%
+}
+
+.gutter_right {
+    padding-right: 4.16667%
+}
+
+.gutter_left_margin {
+    margin-left: 4.16667%
+}
+
+.gutter_right_margin {
+    margin-right: 4.16667%
+}
+
+
+.site-header {
+    position: fixed;
+    z-index: 4000;
+    width: 100%;
+    top: 0;
+    max-width: 1440px
+}
+
+.md-staging-shop .free-shipping.nyc, .md-us-shop .free-shipping.nyc {
+    cursor: pointer
+}
+
+/*Header Nav*/
+
+.header-nav {
+    font-size: .9375rem;
+    width: 100%;
+    position: relative;
+    z-index: 100;
+    line-height: 1.25;
+    background-color: #fff;
+    border-bottom: 1px solid #f4f5f5;
+    height: 90px;
+    text-align: center;
+    clear: both;
+    overflow: hidden
+}
+
+.header-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none
+}
+
+.header-nav ul li {
+    text-transform: uppercase;
+    display: inline-block;
+    zoom: 1;
+    font-size: .938rem;
+    line-height: 1.875rem;
+    color: #dbd8d3;
+    letter-spacing: .05em
+}
+
+.header-nav .mobile-menu {
+    display: none;
+    width: 23px;
+    margin: 0;
+    padding: 34px 0;
+    float: left;
+    clear: left;
+    cursor: pointer
+}
+
+.header-nav .mobile-menu.close .icon-hamburger {
+    background-image: url("//cdn.shopify.com/s/files/1/0404/1101/t/12/assets/images-icons-s850ab6155a.png?16740113298215260041");
+    background-position: -98px 0;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: inline-block;
+    height: 17px;
+    width: 17px
+}
+
+.header-nav .header-logo {
+    width: 250px;
+    display: inline-block;
+    float: left;
+    vertical-align: middle;
+    margin: 0
+}
+
+.header-nav .header-logo a {
+    display: block;
+    padding: 39px 0;
+    background-image: url("img/mdlogo.jpeg")
+}
+
+.header-nav .header-logo span {
+    display: block;
+    margin: 0 auto
+}
+
+.header-nav .header-logo .md-logo {
+    display: block
+}
+
+.header-nav .header-logo .md-logo-icon, .header-nav .header-logo .md-logo-icon-left {
+    display: none
+}
+
+.header-nav .site-nav {
+    width: 40%;
+    max-width: 430px;
+    font-size: 15px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 3%
+}
+
+.header-nav .site-nav .nav-links li {
+    margin-right: 35px;
+    color: #000
+}
+
+.header-nav .site-nav .nav-links li:last-child {
+    margin-right: 0
+}
+
+.header-nav .site-nav .nav-links li a:link, .header-nav .site-nav .nav-links li a:visited {
+    font-family: "Advent Pro", Verdana, sans-serif;
+    font-weight: lighter;
+    color: #000;
+    display: block;
+    padding: 29px 0
+}
+
+.header-nav .site-nav .nav-links li a:hover {
+    color: #f0c417
+}
+
+/*Site Header*/
+
+.site-header-mobile {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    font-family: "Advent Pro", Verdana, sans-serif;
+    font-weight: lighter
+}
+
+
+.no-js .slides>li:first-child {
+    display: block
+}
+
+
+.site-header .search-bar-desktop-wrapper .header-search-form {
+    display: block
+}
+
+.site-header ::-webkit-input-placeholder {
+    color: #000
+}
+
+.site-header :-moz-placeholder {
+    color: #000
+}
+
+.site-header ::-moz-placeholder {
+    color: #000
+}
+
+.site-header :-ms-input-placeholder {
+    color: #000
+}
+
+.site-header .search-bar {
+    position: relative;
+    top: 7px
+}
+
+.site-header .header-search-form {
+    position: relative
+}
+
+.site-header .header-search-form .search-close {
+    height: 13px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    width: 13px
+}
+
+.site-header .header-search-form .search-form-submit {
+    border: 0;
+    background: transparent
+}
+
+.site-header .header-search-form .search-form-submit .svg-icon-close {
+    background-image: url("https://cdn.shopify.com/s/files/1/0516/5373/files/Close_X.png?3521877871310578110");
+    background-size: contain;
+    height: 13px;
+    width: 13px
+}
+
+.site-header .header-search-form {
+    border-bottom: 1px solid #f4f5f5;
+    border-left: 1px solid #f4f5f5;
+    border-right: 1px solid #f4f5f5;
+    display: none;
+    position: absolute;
+    height: 50px;
+    right: -1000px;
+    width: 100%;
+    background-color: #fff;
+    padding: 0 20px;
+    transition: right 0.5s ease-in-out, opacity 0.3s ease-in-out 0.3s;
+    z-index: 200
+}
+
+@media (min-width: 1025px) {
+    .site-header .header-search-form {
+        width: 25%
+    }
+}
+
+.site-header .header-search-form.open-search {
+    display: block;
+    height: 50px;
+    opacity: 1;
+    right: 0;
+    transition: right 0.5s ease-in-out;
+    width: 100%;
+    z-index: 200
+}
+
+@media (min-width: 1025px) {
+    .site-header .header-search-form.open-search {
+        width: 24.9%
+    }
+}
+
+.site-header .header-search-form input {
+    background-color: transparent;
+    border: 0;
+    font-size: 20px !important;
+    height: 100%;
+    line-height: 30px;
+    max-width: 400px;
+    padding: 0;
+    position: relative;
+    right: 0;
+    text-align: left;
+    width: 100%
+}
+
+.site-header .header-search-form .input-group-btn {
+    right: 20px;
+    background-color: transparent
+}
+
+.site-header .header-search-form .search-form-submit {
+    border: 0
+}
+
+.site-header .header-search-form .search-form-submit .svg-icon-close {
+    width: 13px;
+    height: 13px
+}
+
+
+
+.newnav {
+    position: absolute;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    color: #555555;
+    cursor: auto;
+    font-family: "Advent Pro", Verdana, sans-serif;
+    font-size: 15.008px;
+    font-weight: 100;
+    height: 0px;
+    line-height: 88px;
+    letter-spacing: 0.7504px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%;
+    left: -20px;
+    z-index: 99
+}
+
+.link {
+    height: 100px;
+    width: auto;
+    display: inline-block;
+    position: relative;
+    padding-right: 1.1%;
+    padding-left: 1.1%;
+    color: #555
+}
+
+.link:hover {
+    color: #f0c417
+}
+
+
+
+
+.site-header .header-search-form input, .homepage .promo-section .promo-sub, .homepage .module-container .bottom-module-sub-title, .homepage .module-container .promo-sub, .cart-upsell-container .discount-message, .cart-upsell-container .upsell-title {
+    color: #000;
+    font-family: "Advent Pro";
+    font-size: 24px;
+    letter-spacing: 0.5px
+}
+
+@media (min-width: 768px) {
+    .site-header .header-search-form input, .homepage .promo-section .promo-sub, .homepage .module-container .bottom-module-sub-title, .homepage .module-container .promo-sub, .cart-upsell-container .discount-message, .cart-upsell-container .upsell-title {
+        font-size: 30px
+    }
+}
+
+.site-header .header-search-form input.home, .homepage .promo-section .home.promo-sub, .homepage .module-container .home.bottom-module-sub-title, .homepage .module-container .home.promo-sub, .cart-upsell-container .home.discount-message, .cart-upsell-container .home.upsell-title {
+    font-size: 24px
+}
+
+.site-header .header-search-form input.cart, .homepage .promo-section .cart.promo-sub, .homepage .module-container .cart.bottom-module-sub-title, .homepage .module-container .cart.promo-sub, .cart-upsell-container .cart.discount-message, .cart-upsell-container .cart.upsell-title {
+    color: #b1aca1;
+    font-family: "Advent Pro";
+    font-size: 18px
+}
+
+.site-header .header-search-form input.upsell, .homepage .promo-section .upsell.promo-sub, .homepage .module-container .upsell.bottom-module-sub-title, .homepage .module-container .upsell.promo-sub, .cart-upsell-container .upsell.discount-message, .cart-upsell-container .upsell.upsell-title {
+    color: #000;
+    font-family: "Advent Pro";
+    font-size: 18px
+}
+
+.newnav .link {
+    color: #000
+}
+
+.newnav .link:hover {
+    color: #f0c417
+}
+
+.newnav a .link.active {
+    color: #f0c417
+}
+

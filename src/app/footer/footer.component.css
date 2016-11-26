@@ -1,0 +1,321 @@
+.footer {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 100px 50px;
+    background-color: #222
+}
+
+.footer:after {
+    content: " ";
+    display: block;
+    clear: both
+}
+
+.footer .footer-subtext.mobile .newcontact span {
+    display: inline
+}
+
+.footer .mobile {
+    display: none
+}
+
+.footer .social-follow {
+    width: 31.91489%;
+    float: left;
+    margin-right: 2.12766%;
+    text-align: left
+}
+
+.footer .social-follow .follow {
+    font-family: "Advent Pro", Verdana, sans-serif;
+    font-weight: lighter;
+    display: block;
+    text-transform: uppercase;
+    color: #b1aca1;
+    letter-spacing: .05em
+}
+
+.footer .social-follow .social-icons {
+    width: 100%;
+    display: block;
+    padding: 0;
+    margin: 25px 0 45px
+}
+
+.footer .social-follow .social-icons a {
+    margin-right: 9px;
+    display: inline-block;
+    vertical-align: middle
+}
+
+.footer .social-follow .social-icons a:hover {
+    opacity: .4
+}
+
+.footer .social-follow .social-icons a:last-child {
+    margin-right: 0
+}
+
+.footer .extra-links {
+    display: none
+}
+
+.footer .extra-links a {
+    display: inline-block
+}
+
+.footer .extra-links a:nth-child(2) {
+    padding: 0 5px
+}
+
+.footer .extra-links p {
+    color: #b1aca1;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-family: "Advent Pro", Verdana, sans-serif;
+    font-weight: lighter;
+    letter-spacing: 1px
+}
+
+.footer .more {
+    display: none;
+    font-family: "Advent Pro", Verdana, sans-serif;
+    font-weight: lighter;
+    width: 100%;
+    padding: 1.9rem 0;
+    border-top: solid 1px #b1aca1;
+    font-size: .9375rem;
+    text-transform: uppercase;
+    color: #b1aca1;
+    cursor: pointer
+}
+
+.footer .more .more-arrow {
+    vertical-align: middle
+}
+
+.footer .footer-subtext {
+    text-align: left
+}
+
+.footer .footer-subtext span {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 5px 0 0;
+    font-size: .75rem;
+    font-family: Helvetica, sans-serif;
+    font-weight: lighter;
+    text-align: right
+}
+
+.footer .footer-subtext span.ddny {
+    color: #b1aca1;
+    font-size: .9375rem;
+    font-family: "Advent Pro", Verdana, sans-serif;
+    font-weight: lighter;
+    text-align: left;
+    margin-right: 0;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    display: block
+}
+
+.footer .footer-subtext span .copyright {
+    text-align: right
+}
+
+.footer-copyright {
+    color: #b1aca1
+}
+
+.footer .footer-subtext a:link, .footer .footer-subtext a:visited {
+    color: #b1aca1;
+    font-family: Helvetica, sans-serif;
+    font-weight: lighter
+}
+
+.footer .footer-subtext.mobile span {
+    display: block;
+    margin: 8px auto;
+    font-size: .75rem;
+    text-align: center
+}
+
+.footer .footer-subtext.mobile span.ddny {
+    color: #b1aca1;
+    font-size: .9375rem;
+    margin: 12px auto
+}
+
+.footer .footer-subtext.mobile span.ddny a {
+    color: #b1aca1
+}
+
+.footer .footer-subtext.mobile span.icons-sprite {
+    display: inline-block
+}
+
+.footer .footer-subtext.mobile .footer-links {
+    list-style: none;
+    margin: 0 0 23px;
+    padding: 0;
+    width: 100%
+}
+
+.footer .footer-subtext.mobile .footer-links li {
+    font-weight: lighter;
+    display: inline-block !important;
+    text-transform: uppercase;
+    color: #b1aca1;
+    margin: 0 0 0 29px !important;
+    letter-spacing: .05em;
+    font-family: "Advent Pro", Verdana, sans-serif !important
+}
+
+.footer .footer-subtext.mobile .footer-links li:first-child {
+    margin-left: 0
+}
+
+.footer .footer-subtext.mobile .footer-links li:last-child, .footer .footer-subtext.mobile .footer-links li:last-child a {
+    border: none !important
+}
+
+.footer .footer-subtext.mobile .footer-links li a:link, .footer .footer-subtext.mobile .footer-links li a:visited {
+    color: #b1aca1
+}
+
+.footer .footer-subtext.mobile .footer-links li a {
+    border: none !important;
+    font-family: "Advent Pro", Verdana, sans-serif !important
+}
+
+.footer .footer-subtext.mobile .footer-links li a:hover {
+    color: #fff
+}
+
+.footer .main-footer {
+    width: 57.44681%;
+    float: right;
+    margin-right: 0;
+    text-align: left
+}
+
+.footer .main-footer.mobile {
+    width: 100%;
+    display: none;
+    float: none;
+    text-align: center;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    transition: height .4s
+}
+
+.footer .main-footer.mobile.open {
+    height: 525px;
+    transition: height .4s
+}
+
+.footer .main-footer .footer-links {
+    list-style: none;
+    margin: 0 0 23px;
+    padding: 0;
+    width: 100%
+}
+
+.footer .main-footer .footer-links li {
+    font-family: "Advent Pro", Verdana, sans-serif;
+    font-weight: lighter;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #b1aca1;
+    margin: 0 0 0 29px;
+    letter-spacing: .05em
+}
+
+.footer .main-footer .footer-links li:first-child {
+    margin-left: 0
+}
+
+.footer .main-footer .footer-links li a:link, .footer .main-footer .footer-links li a:visited {
+    color: #b1aca1
+}
+
+.footer .main-footer .footer-links li a:hover {
+    color: #fff
+}
+
+.footer .email-capture {
+    max-width: 727px;
+    width: 100%;
+    text-align: left;
+    display: inline-block
+}
+
+.footer .email-capture form {
+    margin-top: 70px;
+    border-bottom: solid 1px #b1aca1
+}
+
+.footer .email-capture form input, .footer .email-capture form span {
+    border: 0;
+    background-color: transparent;
+    outline: 0;
+    display: inline-block;
+    vertical-align: bottom
+}
+
+.footer .email-capture form input[type=text] {
+    width: 80%;
+    color: #b1aca1;
+    padding: 10px 10px 10px 0;
+    font-family: "Advent Pro", Verdana, sans-serif;
+    font-weight: lighter;
+    font-size: 3rem
+}
+
+.footer .email-capture form .input-group-btn {
+    width: 19%;
+    text-align: right;
+    padding-bottom: 16px;
+    display: inline-block
+}
+
+.footer .email-capture form .input-group-btn input[type=submit] {
+    font-family: "Advent Pro", Verdana, sans-serif;
+    font-weight: lighter;
+    font-size: .9375rem;
+    color: #b1aca1;
+    text-transform: uppercase;
+    text-align: right;
+    width: auto;
+    padding: 0;
+    letter-spacing: .05em
+}
+
+.footer .email-capture form .input-group-btn input[type=submit]:hover {
+    color: #fff
+}
+
+.footer .email-capture form ::-webkit-input-placeholder {
+    color: #b1aca1
+}
+
+.footer .email-capture form ::-moz-placeholder {
+    color: #b1aca1
+}
+
+.footer .email-capture form :-ms-input-placeholder {
+    color: #b1aca1
+}
+
+.footer .email-capture .form-messaging {
+    margin-top: 10px;
+    display: none;
+    clear: both
+}
+
+.footer .email-capture-mobile {
+    display: none
+}

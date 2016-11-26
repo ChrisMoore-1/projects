@@ -1,0 +1,886 @@
+
+/*Images*/
+
+/*.img-share {
+    position: absolute;
+    top: 58px;
+    left: 52px;
+    cursor: pointer;
+    display: block
+}
+
+.img-share.active {
+    display: block !important
+}
+
+.img-share.active .icon-share:before {
+    display: none
+}
+
+.img-share .icon-share:before {
+    content: "Share";
+    position: absolute;
+    top: -20px;
+    left: 1px;
+    width: 100%;
+    font-size: .75rem;
+    font-family: "Advent Pro", Verdana, sans-serif;
+    font-weight: lighter;
+    text-transform: uppercase;
+    letter-spacing: .015em;
+    color: #b1aca1;
+    text-align: center;
+    display: block
+}
+
+.img-share .icon-share:hover {
+    opacity: .4
+}
+
+.img-share .share-box {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 54px;
+    height: 206px;
+    border-radius: 5px;
+    line-height: 1
+}
+
+.img-share .share-box .share-twitter {
+    margin-right: 6px
+}
+
+.img-share .share-box .share-facebook {
+    margin-right: 5px
+}
+
+.img-share .share-box .social:hover {
+    opacity: .6
+}
+
+.img-share .share-box .active {
+    display: block
+}*/
+
+/*Promo Section*/
+
+.homepage .promo-section {
+    height: auto;
+    position: relative;
+    margin: 20px auto 24px;
+    width: calc(100vw * (14 / 16))
+}
+
+@media (min-width: 1025px) {
+    .homepage .promo-section {
+        margin: 0 auto 45px;
+        width: 90%
+    }
+}
+
+.homepage .promo-section .img-hover {
+    display: none;
+    height: auto;
+    position: absolute;
+    width: 100%
+}
+
+.homepage .promo-section .img-hover.show {
+    display: block
+}
+
+@media (min-width: 1025px) {
+    .homepage .promo-section .img-hover {
+        display: block
+    }
+}
+
+.homepage .promo-section .tag {
+    bottom: 80px;
+    display: none;
+    height: auto;
+    left: 0;
+    position: relative;
+    text-align: center;
+    width: 100%
+}
+
+@media (min-width: 1025px) {
+    .homepage .promo-section .tag {
+        display: block
+    }
+}
+
+.homepage .promo-section .tag .tag-copy {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #000;
+    font-family: "Advent Pro";
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1;
+    padding: 10px 40px;
+    position: absolute;
+    text-align: center;
+    width: auto
+}
+
+.homepage .promo-section .initial {
+    opacity: 1;
+    transition: opacity 0.3s;
+    visibility: visible
+}
+
+.homepage .promo-section .initial.hide {
+    opacity: 0;
+    transition: visibility 0s 0.3s, opacity 0.3s linear;
+    visibility: hidden
+}
+
+.homepage .promo-section .promo-hover {
+    opacity: 1;
+    visibility: visible
+}
+
+.homepage .promo-section .promo-hover.show {
+    opacity: 1;
+    transition: opacity 0.3s;
+    visibility: visible
+}
+
+@media (min-width: 1025px) {
+    .homepage .promo-section .promo-hover {
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        visibility: hidden;
+        width: 48%;
+        z-index: 1000
+    }
+}
+
+.homepage .promo-section .left-promo {
+    cursor: pointer;
+    display: inline-block;
+    height: 100%;
+    margin: 0 0 24px;
+    width: 100%;
+    overflow: hidden
+}
+
+@media (min-width: 1025px) {
+    .homepage .promo-section .left-promo {
+        margin: 0 0 45px;
+        width: 48%
+    }
+}
+
+.homepage .promo-section .right-promo {
+    cursor: pointer;
+    display: inline-block;
+    height: 100%;
+    margin: 0 0 24px;
+    width: 100%;
+    overflow: hidden
+}
+
+@media (min-width: 1025px) {
+    .homepage .promo-section .right-promo {
+        margin: 0 0 45px 4%;
+        width: 48%
+    }
+}
+
+.homepage .promo-section .promo-title {
+    margin: 0 !important;
+    padding: 18px 0 0;
+    text-align: left
+}
+
+@media (min-width: 1025px) {
+    .homepage .promo-section .promo-title {
+        margin: 30px 0 0 !important;
+        padding: 20px 0 0 20px;
+        position: relative;
+        width: 60%
+    }
+}
+
+.homepage .promo-section .promo-sub {
+    text-align: left
+}
+
+@media (min-width: 1025px) {
+    .homepage .promo-section .promo-sub {
+        padding: 0 0 0 20px;
+        position: relative;
+        width: 60%
+    }
+}
+
+.homepage .promo-section .body-copy {
+    line-height: 18px;
+    padding: 10px 0;
+    text-align: left
+}
+
+@media (min-width: 1025px) {
+    .homepage .promo-section .body-copy {
+        padding: 10px 0 24px 20px;
+        position: relative;
+        width: 60%
+    }
+}
+
+.homepage .promo-section .full {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    position: relative;
+    width: 100%
+}
+
+.homepage .promo-section .video-still {
+    color: #fff;
+    cursor: pointer;
+    font-family: "Advent Pro";
+    font-weight: 100;
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    width: 75px;
+    height: 50px;
+    left: 50%;
+    margin-left: -37px;
+    text-align: center
+}
+
+.homepage .promo-section #ytbox {
+    height: 100% !important;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100% !important;
+    z-index: -1
+}
+
+@media (min-width: 1025px) {
+    .homepage .promo-section #ytbox {
+        height: 100%;
+        left: 0;
+        margin-top: 0;
+        padding: 0;
+        position: absolute;
+        top: 0;
+        z-index: -1
+    }
+}
+
+.homepage .promo-section .webmvid {
+    cursor: pointer;
+    margin-bottom: -3px;
+    width: 100%
+}
+
+.homepage .promo-section button {
+    float: left
+}
+
+@media (min-width: 1025px) {
+    .homepage .promo-section button {
+        margin: 0 0 0 20px;
+        position: relative
+    }
+}
+
+.link {
+    height: 100px;
+    width: auto;
+    display: inline-block;
+    position: relative;
+    padding-right: 1.1%;
+    padding-left: 1.1%;
+    color: #555
+}
+
+.link:hover {
+    color: #f0c417
+}
+
+/*[data-page="product"] .more-reviews {
+    margin-top: -73px
+}
+
+.product-footer>h3 {
+    font-size: 42px;
+    font-family: "Advent Pro", Verdana, sans-serif;
+    font-weight: lighter;
+    color: #333;
+    display: block;
+    padding: 0 2%;
+    margin-top: -111px;
+    margin-bottom: 70px
+}
+
+.shipping-image {
+    width: 15px;
+    height: 15px;
+    margin: 0 0 0 10px;
+    display: inline-block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("//cdn.shopify.com/s/files/1/0516/5373/t/5/assets/M_D_Information-Icon.png?6383218328223340622")
+}
+
+.shipping-image:hover {
+    background-image: url("//cdn.shopify.com/s/files/1/0404/1101/t/12/assets/M_D_Information-Icon-Hover.png?16740113298215260041")
+}
+
+.tech-specs ul {
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 400
+}
+
+.product-full-details h3 {
+    line-height: 1em;
+    font-size: 18px;
+    font-family: "Advent Pro"italic, Verdana, sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0;
+    letter-spacing: .05em
+}
+
+.product-full-details h3 span, .product-full-details h3.nospan {
+    display: block !important;
+    text-transform: none;
+    font-size: 42px;
+    font-family: "Advent Pro", Verdana, sans-serif;
+    font-weight: 400;
+    margin-top: 3px;
+    line-height: 40px
+}
+
+.product-full-details p {
+    font-size: 16px;
+    line-height: 21px;
+    margin-top: 6px
+}
+
+.tech-specs h3 {
+    color: #333;
+    font-size: 42px;
+    font-family: "Advent Pro", Verdana, sans-serif;
+    font-weight: 400;
+    margin: 0 auto 53px
+}
+
+.item-name strong {
+    font-weight: 700
+}
+
+#ytbox {
+    margin-top: 80px;
+    width: 40% !important;
+    height: 320px !important;
+    display: inline-block
+}
+
+#ytinfo {
+    margin-top: 100px;
+    display: inline-block;
+    width: 350px;
+    height: 325px !important;
+    vertical-align: top;
+    text-align: left;
+    padding-left: 50px;
+    font-family: "Advent Pro";
+    color: #333;
+    font-family: "Advent Pro";
+    font-size: .9375rem;
+    line-height: 1.3125rem
+}
+
+#ytinfo p {
+    margin-top: 12px;
+    color: #333;
+    font-family: "Advent Pro", Verdana, sans-serif;
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 2.625rem
+}
+
+@media only screen and (max-width: 400px) {
+    #ytbox {
+        width: 100% !important;
+        height: 171px !important
+    }
+}
+
+@media only screen and (max-width: 765px) {
+    #ytbox {
+        width: 100% !important;
+        height: 333px !important
+    }
+}
+
+@media (max-width: 501px) {
+    #ytinfo {
+        margin-top: 80px;
+        margin-bottom: 75px;
+        font-size: 16px;
+        line-height: 21px;
+        padding-left: 20px;
+        padding-right: 20px;
+        height: auto !important;
+        text-align: center
+    }
+    #ytinfo p {
+        margin-top: -12px;
+        color: #333;
+        font-family: "Advent Pro", Verdana, sans-serif;
+        font-weight: 400;
+        font-size: 3rem;
+        line-height: 2.625rem;
+        text-align: center;
+        margin-bottom: -5px
+    }
+    .tech-specs li {
+        padding: 3px 10px
+    }
+    .tech-specs {
+        background-color: #fff;
+        padding: 88px 0 75px;
+        font-size: 42px
+    }
+    .reviews {
+        padding-left: 20px;
+        padding-right: 20px
+    }
+    .reviews .box {
+        display: block !important
+    }
+    .product-footer {
+        padding-top: 150px
+    }
+    .product-footer h3 {
+        margin-top: -51px
+    }
+}
+
+@media (max-width: 501px) and (max-width: 767px) {
+    #hero_detail_container [data-tooltip-selected]:before {
+        width: 120px
+    }
+    [data-tooltip]:before {
+        position: absolute;
+        bottom: 150%;
+        margin-bottom: 40px;
+        left: -100%;
+        margin-left: 0;
+        padding: 7px;
+        width: 120px;
+        border-radius: 3px;
+        background-color: #000;
+        background-color: #333333;
+        color: #fff;
+        font-weight: 400;
+        content: attr(data-tooltip);
+        text-align: center;
+        font-size: 14px;
+        line-height: 1.2
+    }
+}
+
+.halfhalf {
+    position: relative;
+    width: 94%;
+    left: 3%;
+    height: 341px;
+    padding: 2%;
+    margin-top: -20px;
+    margin-bottom: 60px
+}
+
+#half_left {
+    position: absolute;
+    float: left;
+    height: 100%;
+    width: 46.5% !important;
+    overflow: hidden;
+    border: none;
+    cursor: pointer
+}
+
+#half_right {
+    position: absolute;
+    height: 100%;
+    width: 47% !important;
+    left: 52%;
+    overflow: hidden;
+    border: none;
+    cursor: pointer
+}
+
+#half_left img, #half_right img {
+    height: auto;
+    width: auto;
+    min-height: 103%;
+    min-width: 103%;
+    left: initial
+}*/
+
+.shopbtn {
+    cursor: pointer;
+    position: relative;
+    bottom: 25px;
+    width: 140px;
+    margin-top: 40px;
+    max-width: 140px;
+    line-height: 1;
+    background-color: #FFF;
+    color: #555;
+    background-color: transparent;
+    border: 1px solid #b1aca1;
+    text-align: center;
+    font-family: "Advent Pro";
+    font-weight: 400;
+    font-size: .875em;
+    letter-spacing: .1em;
+    z-index: 2;
+    height: 48px;
+    border-radius: 2px;
+    line-height: 3em;
+    display: none;
+    padding-top: 2px;
+    text-transform: uppercase
+}
+
+.shopbtn a {
+    color: #b1aca1;
+    background-color: transparent
+}
+
+.shopbtn:hover {
+    border-color: #f0c417;
+    color: #f0c417
+}
+
+.shopbtn:hover a {
+    border-color: #f0c417;
+    color: #f0c417
+}
+
+.img, .img_hover, #initial, #hovstate {
+    position: absolute;
+    top: 0;
+    left: initial;
+    right: 0px;
+    height: 100%;
+    width: 100%
+}
+
+#hovstate .img_hover {
+    position: absolute;
+    top: 0;
+    left: initial;
+    right: 0px;
+    height: 100%;
+    width: auto
+}
+
+#initial .img_initial {
+    position: absolute;
+    top: 0;
+    height: auto;
+    width: auto;
+    min-width: 100%;
+    min-height: 100%
+}
+
+.img_initial, .img_hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: auto
+}
+
+.img_hover {
+    display: none
+}
+
+.tag {
+    /*position: absolute;*/
+    bottom: 40px;
+    left: 0%;
+    width: auto;
+    height: 40px;
+    z-index: 4 !important;
+    /*text-align: center;*/
+    font-family: "Advent Pro";
+    font-weight: 400;
+    font-size: 14pt;
+    opacity: .9
+}
+
+.tag h2 {
+    left: 0%;
+    height: 40px;
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: rgba(255, 255, 255, 0.9);
+    font-family: "Advent Pro";
+    font-weight: 400;
+    font-size: 18px;
+    color: #555;
+    letter-spacing: 1;
+    text-align: left;
+    z-index: 4 !important
+}
+
+
+#hovstate {
+    vertical-align: bottom;
+    padding-left: 30px
+}
+
+#hovstate h2 {
+    margin-top: -25px
+}
+
+#hovstate .title h2 {
+    font-weight: 400 !important
+}
+
+#hovstate .title {
+    position: relative;
+    margin-top: 100px;
+    font-family: "Advent Pro";
+    font-weight: 400 !important;
+    font-size: 21px;
+    display: none;
+    letter-spacing: 1;
+    z-index: 2
+}
+
+.subtitle {
+    position: relative;
+    left: 0%;
+    width: 80%;
+    line-height: 1;
+    height: auto;
+    background-color: transparent;
+    margin-top: 125px;
+    text-align: left;
+    font-family: "Advent Pro";
+    font-weight: 400;
+    font-size: 16pt;
+    margin-bottom: 10px;
+    z-index: 2;
+    display: none
+}
+
+.subtitle h2 {
+    font-family: "Advent Pro";
+    font-weight: 400;
+    position: relative;
+    font-size: 30px;
+    line-height: 1.06em;
+    color: #555;
+    letter-spacing: .025em
+}
+
+.body {
+    position: relative;
+    left: 0%;
+    width: 55%;
+    line-height: 1;
+    background-color: transparent;
+    text-align: left;
+    font-family: "Advent Pro";
+    font-size: 1em;
+    line-height: 1.3125em;
+    color: #555;
+    letter-spacing: .025em;
+    z-index: 2;
+    display: none
+}
+
+#hovstate .body p {
+    background-color: transparent;
+    color: #555;
+    margin-bottom: 30px
+}
+
+@media (max-width: 1001px) {
+    .recommended {
+        height: 800px
+    }
+    #half_left {
+        display: block;
+        position: absolute;
+        float: left;
+        height: 100%;
+        width: 100% !important;
+        left: 0%;
+        overflow: hidden;
+        border: none
+    }
+    #half_right {
+        display: block;
+        position: absolute;
+        height: 100%;
+        width: 100% !important;
+        left: 0%;
+        overflow: hidden;
+        border: none;
+        top: 400px
+    }
+}
+
+.homepage .hero-container .hero .hero-copy-container .hero-title, .homepage .promo-section .promo-title, .homepage .module-container .bottom-module-title, .homepage .module-container .promo-title, .master-and-dynamic-for-the-rolling-stones-headphones .section-image-copy, .master-and-dynamic-x-the-rolling-stones-headphones .section-image-copy, .giveaway .sweepstakes-container .sweepstakes-title {
+    color: #222;
+    font-family: "Advent Pro";
+    font-size: 24px;
+    font-weight: 100;
+    letter-spacing: 1px
+}
+
+.homepage .hero-container .hero .hero-copy-container .home.hero-title, .homepage .promo-section .home.promo-title, .homepage .module-container .home.bottom-module-title, .homepage .module-container .home.promo-title, .master-and-dynamic-for-the-rolling-stones-headphones .home.section-image-copy, .master-and-dynamic-x-the-rolling-stones-headphones .home.section-image-copy, .giveaway .sweepstakes-container .home.sweepstakes-title {
+    color: #000;
+    font-family: "Advent Pro";
+    font-size: 20px;
+    margin: 0 0 10px
+}
+
+.homepage .hero-container .hero .hero-copy-container .roll.hero-title, .homepage .promo-section .roll.promo-title, .homepage .module-container .roll.bottom-module-title, .homepage .module-container .roll.promo-title, .master-and-dynamic-for-the-rolling-stones-headphones .roll.section-image-copy, .master-and-dynamic-x-the-rolling-stones-headphones .roll.section-image-copy, .giveaway .sweepstakes-container .roll.sweepstakes-title {
+    color: #fff;
+    font-family: "Advent Pro";
+    font-size: 24px
+}
+
+@media (min-width: 1025px) {
+    .homepage .hero-container .hero .hero-copy-container .roll.hero-title, .homepage .promo-section .roll.promo-title, .homepage .module-container .roll.bottom-module-title, .homepage .module-container .roll.promo-title, .master-and-dynamic-for-the-rolling-stones-headphones .roll.section-image-copy, .master-and-dynamic-x-the-rolling-stones-headphones .roll.section-image-copy, .giveaway .sweepstakes-container .roll.sweepstakes-title {
+        font-size: 42px
+    }
+}
+
+@media (min-width: 768px) {
+    .homepage .hero-container .hero .hero-copy-container .hero-title, .homepage .promo-section .promo-title, .homepage .module-container .bottom-module-title, .homepage .module-container .promo-title, .master-and-dynamic-for-the-rolling-stones-headphones .section-image-copy, .master-and-dynamic-x-the-rolling-stones-headphones .section-image-copy, .giveaway .sweepstakes-container .sweepstakes-title {
+        letter-spacing: 0.5px
+    }
+}
+
+.homepage .hero-container .hero .hero-copy-container .hero-cta, .homepage .module-container .review-module .review-cta, .master-and-dynamic-for-the-rolling-stones-headphones .review-title, .master-and-dynamic-x-the-rolling-stones-headphones .review-title {
+    color: #222;
+    font-family: "Advent Pro";
+    font-size: 14px;
+    letter-spacing: 1px
+}
+
+.homepage .hero-container .hero .hero-copy-container .home.hero-cta, .homepage .module-container .review-module .home.review-cta, .master-and-dynamic-for-the-rolling-stones-headphones .home.review-title, .master-and-dynamic-x-the-rolling-stones-headphones .home.review-title {
+    color: #f0c417;
+    font-family: "Advent Pro"
+}
+
+@media (min-width: 768px) {
+    .homepage .hero-container .hero .hero-copy-container .hero-cta, .homepage .module-container .review-module .review-cta, .master-and-dynamic-for-the-rolling-stones-headphones .review-title, .master-and-dynamic-x-the-rolling-stones-headphones .review-title {
+        font-size: 18px
+    }
+}
+
+.site-header .header-search-form input, .homepage .promo-section .promo-sub, .homepage .module-container .bottom-module-sub-title, .homepage .module-container .promo-sub, .cart-upsell-container .discount-message, .cart-upsell-container .upsell-title {
+    color: #000;
+    font-family: "Advent Pro";
+    font-size: 24px;
+    letter-spacing: 0.5px
+}
+
+@media (min-width: 768px) {
+    .site-header .header-search-form input, .homepage .promo-section .promo-sub, .homepage .module-container .bottom-module-sub-title, .homepage .module-container .promo-sub, .cart-upsell-container .discount-message, .cart-upsell-container .upsell-title {
+        font-size: 30px
+    }
+}
+
+.site-header .header-search-form input.home, .homepage .promo-section .home.promo-sub, .homepage .module-container .home.bottom-module-sub-title, .homepage .module-container .home.promo-sub, .cart-upsell-container .home.discount-message, .cart-upsell-container .home.upsell-title {
+    font-size: 24px
+}
+
+.site-header .header-search-form input.cart, .homepage .promo-section .cart.promo-sub, .homepage .module-container .cart.bottom-module-sub-title, .homepage .module-container .cart.promo-sub, .cart-upsell-container .cart.discount-message, .cart-upsell-container .cart.upsell-title {
+    color: #b1aca1;
+    font-family: "Advent Pro";
+    font-size: 18px
+}
+
+.site-header .header-search-form input.upsell, .homepage .promo-section .upsell.promo-sub, .homepage .module-container .upsell.bottom-module-sub-title, .homepage .module-container .upsell.promo-sub, .cart-upsell-container .upsell.discount-message, .cart-upsell-container .upsell.upsell-title {
+    color: #000;
+    font-family: "Advent Pro";
+    font-size: 18px
+}
+
+.homepage .promo-section .body-copy, .homepage .module-container .body-copy, .cart-upsell-container .discount-conditions, .giveaway .sweepstakes-container .sweepstakes-copy, .giveaway .sweepstakes-container li {
+    color: #000;
+    font-family: "Advent Pro";
+    font-size: 16px;
+    letter-spacing: 0.2px
+}
+
+.homepage .promo-section .cart.body-copy, .homepage .module-container .cart.body-copy, .cart-upsell-container .cart.discount-conditions, .giveaway .sweepstakes-container .cart.sweepstakes-copy, .giveaway .sweepstakes-container li.cart {
+    color: #b1aca1
+}
+
+button, .button {
+    transition: background 0.2, color 0.2, opacity 0.2;
+    background: transparent;
+    border: 1px solid #b1aca1;
+    border-radius: 2px;
+    color: #b1aca1;
+    cursor: pointer;
+    font-family: "Advent Pro";
+    font-size: 14px;
+    height: 40px;
+    letter-spacing: 1.5px;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 140px;
+    -webkit-appearance: none
+}
+
+@media (min-width: 768px) {
+    button:hover, .button:hover {
+        border-color: #f0c417;
+        color: #f0c417;
+        opacity: 0.6
+    }
+}
+
+button.cart-button, .button.cart-button {
+    background: rgba(177, 172, 161, 0.6);
+    border-color: rgba(177, 172, 161, 0.6);
+    color: #fff
+}
+
+@media (min-width: 768px) {
+    button.cart-button:hover, .button.cart-button:hover {
+        border-color: #b1aca1
+    }
+}
+
+.newnav .link {
+    color: #000
+}
+
+.newnav .link:hover {
+    color: #f0c417
+}
+
+.newnav a .link.active {
+    color: #f0c417
+}

@@ -1,0 +1,161 @@
+.wrapper {
+    max-width: 1440px;
+    margin: 89px 0 0;
+    padding: 0;
+    background-color: #fff;
+    overflow: hidden;
+    clear: both;
+    position: relative;
+    top: 0;
+    transition: top .5s
+}
+
+.wrapper.push {
+    top: 250px;
+    transition: top .5s
+}
+
+.homepage .hero-container {
+    height: auto;
+    padding: 0 0 100px
+}
+
+@media (min-width: 768px) {
+    .homepage .hero-container {
+        margin: 0 0 40px
+    }
+}
+
+@media (min-width: 1025px) {
+    .homepage .hero-container {
+        margin: 0 0 45px;
+        padding: 0
+    }
+}
+
+.homepage .hero-container .hero {
+    background: url("./assets/img/hero_img_src.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    height: 350px;
+    width: 100%
+}
+
+@media (min-width: 1025px) {
+    .homepage .hero-container .hero {
+        height: 90vh;
+        position: relative
+    }
+}
+
+.homepage .hero-container .hero .hero-copy-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    bottom: 0;
+    cursor: pointer;
+    height: auto;
+    margin: 0 auto;
+    padding: 24px 70px 0 0;
+    position: relative;
+    text-align: left;
+    top: 100%;
+    width: calc(100vw * (14 / 16))
+}
+
+@media (min-width: 1025px) {
+    .homepage .hero-container .hero .hero-copy-container {
+        bottom: 40px;
+        padding: 30px 70px;
+        position: absolute;
+        top: auto;
+        width: auto
+    }
+}
+
+.homepage .hero-container .hero .hero-copy-container .hero-title {
+    margin: 0 !important;
+    position: relative
+}
+
+.homepage .hero-container .hero .hero-copy-container .hero-copy {
+    margin: 0 0 10px;
+    position: relative
+}
+
+.homepage .hero-container .hero .hero-copy-container .hero-cta {
+    color: #f0c417 !important;
+    position: relative;
+    text-transform: uppercase
+}
+
+.homepage .hero-container .hero .hero-copy-container .hero-copy, .section-header__title {
+    color: #000;
+    font-family: "Advent Pro";
+    font-size: 24px;
+    letter-spacing: 0.5px
+}
+
+@media (min-width: 1025px) {
+    .homepage .hero-container .hero .hero-copy-container .copy-title.hero-copy, .copy-title.section-header__title {
+        font-family: "Advent Pro";
+        font-size: 30px
+    }
+}
+
+@media (min-width: 768px) {
+    .homepage .hero-container .hero .hero-copy-container .hero-copy, .section-header__title {
+        font-size: 42px
+    }
+}
+
+.homepage .hero-container .hero .hero-copy-container .hero-title, .homepage .promo-section .promo-title, .homepage .module-container .bottom-module-title, .homepage .module-container .promo-title, .master-and-dynamic-for-the-rolling-stones-headphones .section-image-copy, .master-and-dynamic-x-the-rolling-stones-headphones .section-image-copy, .giveaway .sweepstakes-container .sweepstakes-title {
+    color: #222;
+    font-family: "Advent Pro";
+    font-size: 24px;
+    font-weight: 100;
+    letter-spacing: 1px
+}
+
+.homepage .hero-container .hero .hero-copy-container .home.hero-title, .homepage .promo-section .home.promo-title, .homepage .module-container .home.bottom-module-title, .homepage .module-container .home.promo-title, .master-and-dynamic-for-the-rolling-stones-headphones .home.section-image-copy, .master-and-dynamic-x-the-rolling-stones-headphones .home.section-image-copy, .giveaway .sweepstakes-container .home.sweepstakes-title {
+    color: #000;
+    font-family: "Advent Pro";
+    font-size: 20px;
+    margin: 0 0 10px
+}
+
+.homepage .hero-container .hero .hero-copy-container .roll.hero-title, .homepage .promo-section .roll.promo-title, .homepage .module-container .roll.bottom-module-title, .homepage .module-container .roll.promo-title, .master-and-dynamic-for-the-rolling-stones-headphones .roll.section-image-copy, .master-and-dynamic-x-the-rolling-stones-headphones .roll.section-image-copy, .giveaway .sweepstakes-container .roll.sweepstakes-title {
+    color: #fff;
+    font-family: "Advent Pro";
+    font-size: 24px
+}
+
+@media (min-width: 1025px) {
+    .homepage .hero-container .hero .hero-copy-container .roll.hero-title, .homepage .promo-section .roll.promo-title, .homepage .module-container .roll.bottom-module-title, .homepage .module-container .roll.promo-title, .master-and-dynamic-for-the-rolling-stones-headphones .roll.section-image-copy, .master-and-dynamic-x-the-rolling-stones-headphones .roll.section-image-copy, .giveaway .sweepstakes-container .roll.sweepstakes-title {
+        font-size: 42px
+    }
+}
+
+@media (min-width: 768px) {
+    .homepage .hero-container .hero .hero-copy-container .hero-title, .homepage .promo-section .promo-title, .homepage .module-container .bottom-module-title, .homepage .module-container .promo-title, .master-and-dynamic-for-the-rolling-stones-headphones .section-image-copy, .master-and-dynamic-x-the-rolling-stones-headphones .section-image-copy, .giveaway .sweepstakes-container .sweepstakes-title {
+        letter-spacing: 0.5px
+    }
+}
+
+.homepage .hero-container .hero .hero-copy-container .hero-cta, .homepage .module-container .review-module .review-cta, .master-and-dynamic-for-the-rolling-stones-headphones .review-title, .master-and-dynamic-x-the-rolling-stones-headphones .review-title {
+    color: #222;
+    font-family: "Advent Pro";
+    font-size: 14px;
+    letter-spacing: 1px
+}
+
+.homepage .hero-container .hero .hero-copy-container .home.hero-cta, .homepage .module-container .review-module .home.review-cta, .master-and-dynamic-for-the-rolling-stones-headphones .home.review-title, .master-and-dynamic-x-the-rolling-stones-headphones .home.review-title {
+    color: #f0c417;
+    font-family: "Advent Pro"
+}
+
+@media (min-width: 768px) {
+    .homepage .hero-container .hero .hero-copy-container .hero-cta, .homepage .module-container .review-module .review-cta, .master-and-dynamic-for-the-rolling-stones-headphones .review-title, .master-and-dynamic-x-the-rolling-stones-headphones .review-title {
+        font-size: 18px
+    }
+}
